@@ -20,11 +20,17 @@
             width: 100%;
             max-width: 1200px;
         }
+        cs-widget {
+            display: block; /* Ensure the widget is displayed */
+            margin: auto; /* Center align the widget */
+        }
     </style>
 </head>
 <body>
     <div class="widget-container">
+        <!-- CoinStats Widget Script -->
         <script async src="https://static.coinstats.app/widgets/v5/cs-widget.js"></script>
+        <!-- CoinStats Widget -->
         <cs-widget
             type="fear-and-greed"
             theme="dark"

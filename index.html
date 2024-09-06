@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CoinStats Widget</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #0D0D0D; /* Matches the widget background color */
+            color: #FFFFFF;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .widget-container {
+            width: 100%;
+            max-width: 1200px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+        cs-widget {
+            display: block;
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="widget-container">
+        <!-- CoinStats Widget Script -->
+        <script async src="https://static.coinstats.app/widgets/v5/cs-widget.js"></script>
+        <!-- CoinStats Widget -->
+        <cs-widget
+            type="fear-and-greed"
+            theme="dark"
+            direction="horizontal"
+            background="rgba(13,13,13,0)"
+            is-market-sentiment-visible="true"
+            is-last-updated-visible="true"
+            title-color="#FFFFFF"
+            chart-indicator-one-color="#F02935"
+            chart-indicator-two-color="#F07D29"
+            chart-indicator-three-color="#9ACB82"
+            chart-indicator-four-color="#34B349"
+            subtitle-color="#999999"
+            last-updated-color="#999999"
+            arrow-color="#262626">
+        </cs-widget>
+    </div>
+</body>
+</html>
